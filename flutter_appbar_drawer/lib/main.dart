@@ -66,6 +66,23 @@ class MyPage extends StatelessWidget {
                 backgroundImage: AssetImage('assets/yang.jpg'),
                 backgroundColor: Colors.blue,
               ), 
+              //다른 계정 사진을 넣어주는 named property
+              otherAccountsPictures: [
+                CircleAvatar(
+                  backgroundImage:  AssetImage('assets/apple.png'),
+                  backgroundColor: Colors.white,
+                ),
+                CircleAvatar(
+                  backgroundImage:  AssetImage('assets/apple.png'),
+                  backgroundColor: Colors.white,
+                ),
+                CircleAvatar(
+                  backgroundImage:  AssetImage('assets/apple.png'),
+                  backgroundColor: Colors.white,
+                ),
+                
+
+              ],
               accountName: Text("JunSikYang"),
               accountEmail: Text("uigohiiming2@gmail.com"),
               // 이메일 옆 화살표 버튼 구현
@@ -80,6 +97,44 @@ class MyPage extends StatelessWidget {
                  
                 )
               ),
+
+              ),
+              ListTile(
+                leading: Icon(Icons.home,
+                color: Colors.grey[850],
+                ),
+                title: Text('Home'),
+                onTap: (){
+                  print('Home icon Clicked!!');
+                },
+                trailing: Icon(Icons.add,
+                color: Colors.black),
+
+              ),
+
+              ListTile(
+                leading: Icon(Icons.settings,
+                color: Colors.grey[850],
+                ),
+                title: Text('Setting'),
+                onTap: (){
+                  print('Setting icon Clicked!!');
+                },
+                trailing: Icon(Icons.add,
+                color: Colors.black),
+
+              ),
+
+              ListTile(
+                leading: Icon(Icons.question_answer,
+                color: Colors.grey[850],
+                ),
+                title: Text('Q&A'),
+                onTap: (){
+                  print('Q&A icon Clicked!!');
+                },
+                trailing: Icon(Icons.add,
+                color: Colors.black),
 
               )
             ]
