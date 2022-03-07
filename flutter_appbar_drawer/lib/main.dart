@@ -33,7 +33,7 @@ class MyPage extends StatelessWidget {
         elevation: 0.0,
 
         //leading은 appBar 좌측에 아이콘 놓고싶은 경우, Scaffold에 drawer를 달아주면, 알아서 leading자리에 메뉴 버튼이 생긴다!
-        
+
         // leading: IconButton(
         //   icon: Icon(Icons.menu),
         //   onPressed: () { 
@@ -57,7 +57,34 @@ class MyPage extends StatelessWidget {
             ),
           ]
         ),
-        drawer: Drawer(),
+        drawer: Drawer(
+          child: ListView(
+            //safeArea무시 
+            padding: EdgeInsets.zero,
+            children: <Widget>[
+              UserAccountsDrawerHeader(currentAccountPicture: CircleAvatar(
+                backgroundImage: AssetImage('assets/yang.jpg'),
+                backgroundColor: Colors.blue,
+              ), 
+              accountName: Text("JunSikYang"),
+              accountEmail: Text("uigohiiming2@gmail.com"),
+              // 이메일 옆 화살표 버튼 구현
+              onDetailsPressed: (){
+                print("arrow button clicked!!");
+              },
+              decoration: BoxDecoration(
+                color: Colors.red[200],
+                borderRadius: BorderRadius.only(
+                  bottomLeft: Radius.circular(40.0),
+                  bottomRight: Radius.circular(40.0),
+                 
+                )
+              ),
+
+              )
+            ]
+          ),
+        ),
     );
   }
 }
