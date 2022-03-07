@@ -29,15 +29,18 @@ class MyPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Appbar icon menu'),
-        //centerTitle: true,
+        centerTitle: true,
         elevation: 0.0,
-        //leading은 appBar 좌측에 아이콘 놓고싶은 경우 
-        leading: IconButton(
-          icon: Icon(Icons.menu),
-          onPressed: () { 
-            print('menu button is clicked');
-           },
-          ),
+
+        //leading은 appBar 좌측에 아이콘 놓고싶은 경우, Scaffold에 drawer를 달아주면, 알아서 leading자리에 메뉴 버튼이 생긴다!
+        
+        // leading: IconButton(
+        //   icon: Icon(Icons.menu),
+        //   onPressed: () { 
+        //     print('menu button is clicked');
+        //    },
+        //   ),
+
          // actions는 appBar 우측에 아이콘 놓고싶은 경우
           actions: [IconButton(
             icon: Icon(Icons.shopping_cart),
@@ -45,16 +48,16 @@ class MyPage extends StatelessWidget {
               print('shopping cart button is clicked');
             },
             ),
+            //IconButton은 Icon과 onPressed 함수를 인자로 받는다.
             IconButton(
             icon: Icon(Icons.search),
             onPressed: () { 
               print('search button is clicked');
             },
             ),
-            
-          ],
-
+          ]
         ),
+        drawer: Drawer(),
     );
   }
 }
