@@ -11,3 +11,9 @@
 <img width="200" alt="스크린샷 2022-03-07 오후 10 10 31" src="https://user-images.githubusercontent.com/75043852/157040891-ce0d3d55-c86a-45a0-9653-6d1d08dc189d.png">
 <img width="200" alt="스크린샷 2022-03-07 오후 10 10 40" src="https://user-images.githubusercontent.com/75043852/157040904-a8218eaa-5c99-483e-a894-79bd625cd7d9.png">
 </p>
+
+## 3. BuildContext란?
+
+### -> A handle to the location of a widget in the widget tree
+### -> Each widget has its own BuildContext, which becomes the parent of the widget returned by the StatelessWidget.build or State.build function
+
