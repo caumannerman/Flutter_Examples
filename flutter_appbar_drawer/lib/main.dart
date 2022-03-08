@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -57,8 +59,59 @@ class MyPage extends StatelessWidget {
             ),
           ]
         ),
+
+        body: ListView(
+          children: [ElevatedButton(
+            //width: 100.0,
+            // height: 50.0,
+
+              child: Text("Snack Bar Button"),
+              style: TextButton.styleFrom(
+                backgroundColor: Colors.yellowAccent,
+                primary: Colors.red,
+              ),
+
+              onPressed: () {
+                ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(content: Text("Flutter 2.0 SnackBar!"),
+                  backgroundColor: Colors.black,
+                  duration: Duration(seconds: 5),
+                  action: SnackBarAction(
+                    label: 'Undo',
+                    onPressed: (){},
+                    )
+                    )
+                );
+              }
+          ),
+          
+          ElevatedButton(
+            //width: 100.0,
+            // height: 50.0,
+
+              child: Text("Toast Button"),
+              style: TextButton.styleFrom(
+                backgroundColor: Colors.yellowAccent,
+                primary: Colors.red,
+              ),
+
+              onPressed: () {
+                Fluttertoast.showToast(
+                  msg: 'Fllutter 토스트 메시지',
+                  gravity: ToastGravity.CENTER,
+                  backgroundColor: Colors.blueAccent,
+                  fontSize: 20.0,
+                  textColor: Colors.brown,
+                  toastLength: Toast.LENGTH_LONG,
+                );
+              }
+          ),
+          ]
+          
+        ),
+
         drawer: Drawer(
-          child: ListView(
+          child: ListView( 
             //safeArea무시 
             padding: EdgeInsets.zero,
             children: <Widget>[
