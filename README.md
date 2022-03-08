@@ -16,7 +16,7 @@
 ### Text("text", style: TextStyle( color:, letterSpacing:,.... ))과 같이 텍스트 Widget의 스타일 변경 
 ### SizedBox() : height, width 등의 인자로, 시각적으로 빈 공간으로서 Widget 사이 거리 조절
 ### Icon(Icons.~~~)로 아이콘 사용 가능 
-
+### CircleAvatar( backgroundImage: AssetImage(), radios: 30.0 ) 과 같이 이미지를 원형으로 사용할 수 있다.
 
 ## 2. Flutter_AppBar_Drawer
 
