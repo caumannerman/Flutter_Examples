@@ -10,13 +10,15 @@
 
 <img width="200" alt="스크린샷 2022-03-07 오후 5 27 35" src="https://user-images.githubusercontent.com/75043852/156994991-c7bb37cb-f20a-4806-b774-dc3d825cd60b.png">
 
-### Padding( padding: EdgeInsets.fromLTRB( 30.0, 40.0, 0.0, 0.0) ) -> Padding 위젯 내부의 패딩 적용 
-### Column() 위젯 : Vertical한 Linear view 구성, children인자에 세로로 정렬할 Widget들을 전달
+### - Padding( padding: EdgeInsets.fromLTRB( 30.0, 40.0, 0.0, 0.0) ) -> Padding 위젯 내부의 패딩 적용 
+### - Column() 위젯 : Vertical한 Linear view 구성, children인자에 세로로 정렬할 Widget들을 전달
 ##### -> crossAxisAlignment, mainAxisAlignment로 해당 정렬 내에서 상하/ 좌우 정렬 설정 가능  ex) crossAxisAlignment: CrossAxisAlignment.start
-### Text("text", style: TextStyle( color:, letterSpacing:,.... ))과 같이 텍스트 Widget의 스타일 변경 
-### SizedBox() : height, width 등의 인자로, 시각적으로 빈 공간으로서 Widget 사이 거리 조절
-### Icon(Icons.~~~)로 아이콘 사용 가능 
-### CircleAvatar( backgroundImage: AssetImage(), radios: 30.0 ) 과 같이 이미지를 원형으로 사용할 수 있다.
+### - Text("text", style: TextStyle( color:, letterSpacing:,.... ))과 같이 텍스트 Widget의 스타일 변경 
+### - SizedBox() : height, width 등의 인자로, 시각적으로 빈 공간으로서 Widget 사이 거리 조절
+### - Icon(Icons.~~~)로 아이콘 사용 가능 
+### - CircleAvatar( backgroundImage: AssetImage(), radios: 30.0 ) 과 같이 이미지를 원형으로 사용할 수 있다.
+#### - Divider: 구획을 나누어주는 선 widget
+
 
 ## 2. Flutter_AppBar_Drawer
 
