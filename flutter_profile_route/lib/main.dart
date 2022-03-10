@@ -23,7 +23,7 @@ class Grade extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.amber[800],
       appBar: AppBar(
-           title: Text("Yang Juna Sik"),
+           title: Text("Yang Jun Sik"),
            centerTitle: true,
            backgroundColor: Colors.amber[700],
            elevation: 0.0,
